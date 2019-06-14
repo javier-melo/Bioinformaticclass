@@ -1,0 +1,500 @@
+  115  ls
+  116  tar xvf variant_calling_auto.tar.gz 
+  117  clear
+  118  ls
+  119  rm variant_calling_auto.tar.gz 
+  120  cd variant_calling_auto/
+  121  ls
+  122  cd ../
+  123  ls
+  124  mv variant_calling_auto/results/ .solutions/wrangling-solutions/variant_calling_auto/
+  125  ls
+  126  cd .solutions/wrangling-solutions/
+  127  ls
+  128  cd variant_calling_auto/
+  129  ls
+  130  cd results/
+  131  ls
+  132  ls bam/
+  133  cd ../../
+  134  ls
+  135  cd ../
+  136  ls
+  137  clear
+  138  ls
+  139  cd ../
+  140  ls
+  141  ls variant_calling_auto/
+  142  rm -rf variant_calling_auto/
+  143  clear
+  144  ls
+  145  exit
+  146  ls
+  147  clear
+  148  ls
+  149  ls shell_data/
+  150  ls -la
+  151  clear
+  152  ls -a
+  153  clear
+  154  exit
+  155  ls
+  156  clear
+  157  ls
+  158  pwd
+  159  ls
+  160  cd shell_data/
+  161  pwd
+  162  ls
+  163  ls -F
+  164  man ls
+  165  cd untrimmed_fastq/
+  166  ls
+  167  ls $R
+  168  cd ..
+  169  ls 
+  170  ls untrimmed_fastq/
+  171  ls ..
+  172  ls -a
+  173  ls ~
+  174  cd ..
+  175  ls 
+  176  ls shell_data/untrimmed_fastq/
+  177  cd shell_data/
+  178  cd untrimmed_fastq/
+  179  ls *fast
+  180  ls *977
+  181  ls
+  182  ls *fastq
+  183  ls *977
+  184  ls *977. fastq
+  185  echo *fastq
+  186  ls *977.fastq
+  187  echo SRR097977.fastq 
+  188  history
+  189  ls ~
+  190  ls ..^C
+  191  cat SRR097977.fastq
+  192  less SRR0997977.fastq
+  193  ls
+  194  less SRR097977
+  195  less SRR097977.fastq
+  196  tail SRR097977.fastq
+  197  head -1 SRR097997.fastq
+  198  head -1 SRR097977.fastq
+  199  head -4 SRR097977.fastq
+  200  cp SRR098026.fastq 
+  201  cp SRR098026.fastq SRR098026-backup.fastq 
+  202  mkdir backup_fastq
+  203  ls -F
+  204  mv SRR098026-backup.fastq backup_fastq/
+  205  ls
+  206  ls backup_fastq/
+  207  ls -lh
+  208  cd backup_fastq/
+  209  chmod -w SRR098026-backup.fastq 
+  210  ls -lh
+  211  rm SRR098026-backup.fastq 
+  212  ls
+  213  cd ..
+  214  ls
+  215  cp SRR097977.fastq SRR097977-backup.fastq 
+  216  cp SRR098026.fastq SRR098026-backup.fastq 
+  217  cp *fastq *-backup.fastq
+  218  echo *fastq *-backup.fastq
+  219  cp SRR097977-backup.fastq backup_fastq/SRR097977-backup.fastq
+  220  cp SRR098026-backup.fastq backup_fastq/SRR098026-backup.fastq
+  221  chmod -w backup_fastq/*
+  222  ls -lh
+  223  ls -lh backup_fastq/
+  224  more SRR098026
+  225  head SRR098026.fastq 
+  226  cat SRR098026.fastq 
+  227  cd ..
+  228  cd untrimmed_fastq/
+  229  grep NNNNNN SRR098026.fastq 
+  230  grep -B1 -A2  NNNNNN SRR098026.fastq
+  231  grep -B1 -A2  AAGTT SRR098026.fastq
+  232  grep -B1 -A2  AAGTT SRR098026.fastq   SRR097977.fastq 
+  233  grep -h -B1 -A2  NNNNNN *fastq badreads.txt
+  234  wc badreads.txt
+  235  grep -h -B1 -A2  NNNNNN *fastq > badreads.txt
+  236  wc badreads.txt
+  237  ls
+  238  grep -h -B1 -A2  NNNNNN *.fastq > badreads.txt
+  239  wc badreads.txt
+  240  wc -w badreads.txt
+  241  mv badreads.txt badreads.fastq
+  242  echo "grep -h -B1 -A2  NNNNNN" *.fastq" > badreads.txt"
+  243  ls
+  244  grep -B1 -A2 NNNNNN *.fastq | wc -l 
+  245  head *.fastq
+  246  head -1 *.fastq
+  247  for filename in *.fastq; do head -1 $filename ;  echo 4C978904 && /usr/bin/env && echo 81D06EB6
+  248  for filename in *.fastq; do  head -n 1 $filename >>seq_info.txt; done
+  249  cat seq_info.txt 
+  250  for filename *fastq
+  251  for filename in *fastq; do echo $filename >seq_info.txt; done
+  252  cat seq_info.txt
+  253  for filename *fastq
+  254  for filename in *fastq;  echo 4C978904 && /usr/bin/env && echo 81D06EB6
+  255  for filename in *fastq; do  echo 4C978904 && /usr/bin/env && echo 81D06EB6
+  256  more 
+  257  for filename in *fastq; do  echo 4C978904 && /usr/bin/env && echo 81D06EB6
+  258  for filename in *fasq; do grep -p NNNNNN; done
+  259  for filename in *fasq; do grep NNNNNN; done
+  260  for filename in *fasq; do grep -B1 -A2 NNNNNN; done
+  261  for filename in *fasq; do grep -B1 -A2 NNNNNN $filename; done
+  262  for filename in *fatq; do grep -B1 -A2 NNNNNN $filename; done
+  263  for filename in *fastq; do grep -B1 -A2 NNNNNN $filename; done
+  264  basename SRR098026.fastq .fastq 
+  265  cd ..
+  266  ls untrimmed_fastq/*fastq
+  267  ls *_fastq/*.fastq
+  268  basename untrimmed_fastq/SRR098026 
+  269  basename untrimmed_fastq/SRR098026.fastq .fastq 
+  270  #Challenge : get alll SRR numbers in all fastq folders
+  271  basename untrimmed_fastq/*.fastq SRR 
+  272  basename untrimmed_fastq/*.fastq
+  273  basename untrimmed_fastq/*fastq
+  274  basename untrimmed_fastq/*SRR SRR
+  275  basename untrimmed_fastq/.fastq SRR
+  276  basename untrimmed_fastq/.fastq SRR .fastq
+  277  basename untrimmed_fastq/SRR
+  278  basename untrimmed_fastq/.fastq SRR
+  279  basename untrimmed_fastq/SRR .fastq
+  280  ls
+  281  ls untrimmed_fastq/
+  282  basename  *_fastq/*.fastq
+  283  basename  *_fastq/*.fastq SRR
+  284  ls  *_fastq/*.fastq 
+  285  ls  *_fastq/*.fastq  SRR
+  286  basename untrimmed_fastq/.fastq 
+  287  basename untrimmed_fastq/.fastq  .fastq
+  288  basename untrimmed_fastq/fastq  .fastq
+  289  ls
+  290  ls untrimmed_fastq/
+  291  for filename in *fastq;  echo 4C978904 && /usr/bin/env && echo 81D06EB6
+  292  ls *_fastq/*.fastq
+  293  for filename in *_fastq/*.fastq; do echo $filename; done
+  294  for filename in *_fastq/*.fastq; do basename $filename .fastq SRRs.txt; done
+  295  for filename in *_fastq/*.fastq; do basename $filename .fastq >> SRRs.txt; done
+  296  cat SRRs.txt 
+  297  history .pdf
+  298  history
+  299  history .pdf
+  300  for filename *_fastq/*.fastq 
+  301  for filename in *_fastq/*.fastq ; do name =$(basename ${filename} .fastq); echo $name; done
+  302  for filename in *_fastq/*.fastq ; do name=$(basename ${filename} .fastq); echo $name; done
+  303  #print the name of each text file
+  304  for filename in *_txt/*.txt ; do name=$(basename ${filename} .txt); echo $name; done
+  305  for filename in *_txt/*.txt; do basename $filename .txt >> TXT.txt; done
+  306  cat TXT.txt 
+  307  for f in *.txt: do name=$(basename ${f} .txt); echo ${name};done
+  308  for f in *.txt: do name=$(basename ${f} .txt);echo ${name} ;done
+  309  rename all .txt files to _2019
+  310  for filenames in *.txt: do name=$(basename ${filenames} .txt);echo ${name} ;done
+  311  for filename in *.txt; do rename all .txt files to _2019done; done
+  312  history
+  313  for filename in *.txt; do mv $filename *.txt *_2019.txt; done
+  314  for filename in *.txt; do newname=$(basename $filename .txt); mv $filename ${newname}_2019.txt; done
+  315  for filename in *.txt; do newname=$(basename $filename .txt); echo "mv $filename ${newname}_2019.txt"; done
+  316  for filename in *.txt; do newname=$(basename $filename .txt); echo "rm $filename ${newname}_2019.txt"; done
+  317  for filename in *.txt; do newname=$(basename $filename .txt); echo "mv $filename ${newname}.txt"; done
+  318  for filename in *.txt; do newname=$(basename $filename .txt); mv $filename ${newname}.txt; done
+  319  ls
+  320  for filename in *.txt; do newname=$(basename ${filename} .txt);echo  mv $filename ${newname}.txt; done
+  321  for filename in *_2019.txt; do newname=$(basename ${filename} _2019.txt);echo "mv $filename ${newname}.txt"; done
+  322  for filename in *_2019.txt; do newname=$(basename ${filename} _2019.txt);echo mv $filename ${newname}.txt; done
+  323  for filename in *_2019.txt; do newname=$(basename ${filename} _2019.txt); mv $filename ${newname}.txt; done
+  324  ls
+  325  history 
+  326  history
+  327  history >> history.pdf
+  328  history >> history20190610.pdf
+  329  ls
+  330  cd shell_data/
+  331  cd untrimmed_fastq/
+  332  nano README.txt
+  333  cat README.txt 
+  334  ls
+  335  cd ..
+  336  mkdir scripts
+  337  mkdir processed_data
+  338  cd scripts/
+  339  nano get_bad_reads.sh
+  340  cat get_bad_reads.sh 
+  341  bash get_bad_reads.sh
+  342  head ../processed_data/bad_reads.fastq 
+  343  nano ged_bad_reads.sh
+  344  nano get_bad_reads.sh 
+  345  bash get_bad_reads.sh 
+  346  cd ..
+  347  ls
+  348  cd processed_data/
+  349  ls
+  350  cat bad_reads.fastq 
+  351  bash bad_reads.sh
+  352  cd ..
+  353  cd scripts/
+  354  ls
+  355  bash bad_reads.sh
+  356  bash get_bad_reads.sh
+  357  cd ..
+  358  ls
+  359  cd scripts
+  360  ls
+  361  chmod -w get_bad_reads.sh 
+  362  chmod -w get_bad_reads/*
+  363  ..cd
+  364  .. cd
+  365  chmod -w scripts/*
+  366  ls ~lh scripts/
+  367  ls -lh scripts/
+  368  cd scripts/
+  369  chmod +x get_bad_reads.sh 
+  370  ls -lh get_bad_reads.sh 
+  371  nano get_bad_reads.sh 
+  372  chmod +w get_bad_reads.sh 
+  373  nano get_bad_reads.sh 
+  374  ./get_bad_reads.sh  ../untrimmed_fastq/*.fastq
+  375  nano get_bad_reads.sh 
+  376  ./get_bad_reads.sh  ../untrimmed_fastq/*.fastq
+  377  cat  get_bad_reads.sh 
+  378  nano get_bad_reads.sh 
+  379  ./get_bad_reads.sh  ../untrimmed_fastq/*.fastq
+  380  cd ..
+  381  ls
+  382  mkdir data_info
+  383  cd data_info/
+  384  curl -O https://raw.githubusercontent.com/datacarpentry/wrangling-genomics/gh-pages/files/Ecoli_metadata_composite.csv
+  385  head Ecoli_metadata_composite.csv 
+  386  cd ..
+  387  mkdir data
+  388  mkdir data/untrimmed_fastq
+  389  cp ~/.backup/trimmmed_fastq/*fastq.gz data/untrimmed_fastq/
+  390  cd data/untrimmed_fastq/
+  391  ls
+  392  ls -lh
+  393  cd data
+  394  cd ..
+  395  ls
+  396  cd untrimmed_fastq/
+  397  ls
+  398  cp ~/.backup/trimmmed_fastq/*fastq.gz data/untrimmed_fastq/
+  399  ls
+  400  .. cd
+  401  cd ..
+  402  cp ~/.backup/trimmmed_fastq/*fastq.gz data/untrimmed_fastq/
+  403  cp ~/.backup/trimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  404  ls
+  405  mkdir ~bash_scripts
+  406  cp  ~/.backup/trimmed_fastq/*fastq.gz  data/untrimmed_fastq/
+  407  ls
+  408  cd data
+  409  cd data/
+  410  ls
+  411  cp  ~/.backup/trimmed_fastq/*fastq.gz  data/untrimmed_fastq/
+  412  ls
+  413  cp ~/.backup/trimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  414  mkdir data
+  415  mkdir untrimmed_fastq
+  416  cp ~/.backup/trimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  417  .. cd
+  418  pwd
+  419  mkdir ~/bash_scripts
+  420  echo "fastqc *fastq.gz" > ~/bash_scripts/variant_calling.sh
+  421  cat ~/bash_scripts/variant_calling.sh 
+  422  ls
+  423  pwd
+  424  mkdir -p ~/results/fastqc_untrimmed
+  425  mv *html ~/results/fastqc_untrimmed/
+  426  results/ cd
+  427  ls
+  428  fastqc_untrimmed/ cd
+  429  ls
+  430  .. cd
+  431  ..cd
+  432  .. cd
+  433  cp ~/.backup/untrimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  434  cd data/untrimmed_fastq/
+  435  echo "fastqc *fastq.gz" > ~/bash_scripts/variant_calling.sh
+  436  cat ~/bash_scripts/variant_calling.sh 
+  437  mkdir -p ~/results/fastqc_untrimmed
+  438  echo "fastqc *fastq.gz" > ~/bash_scripts/variant_calling.sh
+  439  mkdir -p ~/results/fastqc_untrimmed
+  440  echo "fastqc *fastq.gz" > ~/bash_scripts/variant_calling.sh
+  441  ls
+  442  un zip SRR2584863_1.fastq.gz 
+  443  unzip SRR2584863_1.fastq.gz 
+  444  ls
+  445  unzip SRR2584863_1.fastq.gz 
+  446  unzip "*.zip"
+  447  ls
+  448  gunzip "*.zip"
+  449  gzip "*.zip"
+  450  ls
+  451  gzip -d SRR2584863_1.fastq.gz 
+  452  for filename in *fastq.gz; do gzip -d filename ; done
+  453  for filename in *fastq.gz/*fastq.gz; do gzip -d filename ; done
+  454  for filename in *.fastq.gz/*fastq.gz; do gzip -d filename ; done
+  455  ls
+  456  cd ..
+  457  cp ~/.backup/untrimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  458  cd ..
+  459  cp ~/.backup/untrimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  460  mkdir ~/bash_scripts
+  461  cat ~/bash_scripts/variant_calling.sh 
+  462  mkdir -p ~/results/fastqc_untrimmed
+  463  echo "fastqc *fastq.gz" > ~/bash_scripts/variant_calling.sh
+  464  cat ~/bash_scripts/variant_calling.sh 
+  465  mv *html ~/results/fastqc_untrimmed/
+  466  history
+  467  cd data
+  468  cd untrimmed_fastq/
+  469  fastqc *.fastq.gz
+  470  for filename in *.zip;do unzip ${filename}; done
+  471  head SRR2584863_1
+  472  head SRR2584863_1_fastqc/summary.txt
+  473  grep FAIL */summary.txt >>FAIL.txt
+  474  cat FAIL.txt 
+  475  trimmomatic
+  476  nano ~bash_scripts/trim_script.sh
+  477  nano ~bash_scripts/trim_script2.sh
+  478  nano ~/bash_scripts/trim_script2.sh
+  479  bash ~/bash_scripts/trim_script2.sh 
+  480  nano ~/bash_scripts/trim_script2.sh
+  481  bash ~/bash_scripts/trim_script2.sh 
+  482  nano ~/bash_scripts/trim_script2.sh
+  483  bash ~/bash_scripts/trim_script2.sh 
+  484  cd ..
+  485  bash ~/bash_scripts/trim_script2.sh 
+  486  nano ~/bash_scripts/trim_script2.sh
+  487  cd data
+  488  cd untrimmed_fastq/
+  489  bash ~/bash_scripts/trim_script2.sh 
+  490  nano ~/bash_scripts/trim_script2.sh
+  491  bash ~/bash_scripts/trim_script2.sh 
+  492  ls -l
+  493  nano ~/bash_scripts/trim_script2.sh
+  494  bash ~/bash_scripts/trim_script2.sh 
+  495  nano ~/bash_scripts/trim_script2.sh
+  496  bash ~/bash_scripts/trim_script2.sh 
+  497  nano ~/bash_scripts/trim_script2.sh
+  498  nano ~/bash_scripts/trim_script3.sh
+  499  ls
+  500  cd data
+  501  ls
+  502  for file in untrimmed_fastq/*fastq; do echo "fastq $file"; done
+  503  for file in untrimmed_fastq/*fastqc; do echo "fastq $file"; done
+  504  nano ~/bash_scripts/trim_script3.sh
+  505  nano ~/bash_scripts/trim_script2.sh
+  506  nano ~/bash_scripts/trim_script3.sh
+  507  nano ~/bash_scripts/trim_script2.sh
+  508  for R1 in *_1.* ; do R1=${R1//_1.fastq/_2.fastq}    ; R1paired=${R1//.fastq/_paired.fastq.gz} R1unpaired=${R1//.fastq/_unpaired.fastq.gz};    R2paired=${R2//.fastq/_paired.fastq.gz}
+  509  for R1 in *_1* ; do R1=${R1//_1.fastq/_2.fastq}    ; R1paired=${R1//.fastq/_paired.fastq.gz} R1unpaired=${R1//.fastq/_unpaired.fastq.gz};    R2paired=${R2//.fastq/_paired.fastq.gz};    R2unpaired=${R2//.fastq/_unpaired.fastq.gz}; echo "java -jar $WORK/IntMolModule/STG/practiceData/Trimmomatic-0.36 PE -threads 32 -phred33 $R1 $R2 $R1paired $R1unpaired $R2paired $R2unpaired";done
+  510  nano ~/bash_scripts/trim_script3.sh
+  511  ls
+  512  nano ~/bash_scripts/trim_script3.sh
+  513  bash ~/bash_scripts/trim_script3.sh
+  514  basename
+  515  basename *fastq-gz
+  516  basename *fastq.gz
+  517  ls
+  518  cd untrimmed_fastq/
+  519  basename .fastq.gz
+  520  history
+  521  for filename in *fastq.gz; do echo "basename ${filename}"; done
+  522  for filename in *fastq.gz; do basename ${filename}; done
+  523  for filename in *fastq.gz; do basename ${filename} .fastq.gz; done
+  524  for filename in *_1.fastq.gz; do basename ${filename} .fastq.gz; done
+  525  for R1 in *_1.fastq.gz R2 *_2.fastq.gz; do basename ${filename} .fastq.gz; done
+  526  for R1 in *_1.fastq.gz R2 *_2.fastq.gz; do basename ${R1,R2} .fastq.gz; done
+  527  for R1 in *_1.fastq.gz R2 *_2.fastq.gz; do basename ${R1} .fastq.gz; done
+  528  for R1 in *_1.fastq.gz *_2.fastq.gz; do basename ${R1} .fastq.gz; done
+  529  for R1 in *_1.fastq.gz; do for R2 *_2.fastq.gz basename ${R1} .fastq.gz; done
+  530  for R1 in *_1.fastq.gz; do for R2 in *_2.fastq.gz basename ${R1} .fastq.gz; done
+  531  for R1 in *_1.fastq.gz; do for R2 in *_2.fastq.gz ; do basename ${R1} .fastq.gz; done; done
+  532  for R1 in *_1.fastq.gz; do  for R2 in *_2.fastq.gz; basename $R1 .fastq.gz
+  533  for R1 in *_1.fastq.gz; do  for R2 in *_2.fastq.gz; basename $R1 .fastq.gz;done
+  534  for R1 in *_1.fastq.gz; do  for R2 in *_2.fastq.gz; basename ${R1} .fastq.gz;done
+  535  R1 = for R1 in *_1.fastq.gz; R2=for R2 in *_2.fastq.gz; basename ${R1} .fastq.gz;done
+  536  R1 = for R1 in *_1.fastq.gz; R2=for R2 in *_2.fastq.gz; basename ${R1} .fastq.gz; done
+  537  for R1 in *_1.fastq.gz; do R2=${R1%%_1.fastq.gz}"_2.fastq.gz"; echo $R2; done
+  538  for R1 in *_1.fastq.gz; do R2=${R1%%_1.fastq.gz}"_2.fastq.gz"; echo $R1; done
+  539  for R1 in *_1.fastq.gz; do R2=${R1%%_1.fastq.gz}"_2.fastq.gz"; echo "basename $R1 .fastq.gz; done
+  540  for R1 in *_1.fastq.gz; do R2=${R1%%_1.fastq.gz}"_2.fastq.gz"; echo "basename $R1 .fastq.gz"; done
+  541  for R1 in *_1.fastq.gz; do R2=${R1%%_1.fastq.gz}"_2.fastq.gz"; basename $R1 .fastq.gz; done
+  542  bash ~/bash_scripts/trim_script4.sh
+  543  bash ~/bash_scripts/trim_script2.sh
+  544  bash ~/bash_scripts/trim_script4.sh
+  545  cd ..
+  546  cd trimmed_fastq/
+  547  bash ~/bash_scripts/variant_calling.sh 
+  548  cd ..
+  549  cd untrimmed_fastq/
+  550  bash ~/bash_scripts/trim_script4.sh
+  551  bash ~/bash_scripts/trim_script3.sh
+  552  cd ..
+  553  bash ~/bash_scripts/trim_script3.sh
+  554  bash ~/bash_scripts/trim_script3.sh *~data/untrimmed_fastq
+  555  bash ~/bash_scripts/trim_script3.sh ~data/untrimmed_fastq
+  556  bash ~/bash_scripts/trim_script3.sh ~/data/untrimmed_fastq
+  557  bash ~/bash_scripts/trim_script3.sh ~/data/untrimmed_fastq/
+  558  bash ~/bash_scripts/trim_script4.sh 
+  559  bash ~/bash_scripts/trim_script4.sh
+  560  bash ~/bash_scripts/trim_script4.sh 
+  561  curl -O ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/017/985/GCA_000017985.1_ASM1798v1/GCA_000017985.1_ASM1798v1_genomic.fna.gz
+  562  cd data
+  563  cd ref_genome/
+  564  unzip GCA_000017985.1_ASM1798v1_genomic.fna.gz
+  565  wzunzip -d GCA_000017985.1_ASM1798v1_genomic.fna.gz 
+  566  gunzip -d GCA_000017985.1_ASM1798v1_genomic.fna.gz 
+  567  ls
+  568  head GCA_000017985.1_ASM1798v1_genomic.fna 
+  569  grep "^>" GCA_000017985.1_ASM1798v1_genomic.fna 
+  570  cd ..
+  571  cd untrimmed_fastq/
+  572  bash ~/bash_scripts/trim_script4.sh 
+  573  cd ..
+  574  mkdir trimmed_fastq_small
+  575  cd trimmed_fastq_small/
+  576  curl -i -o sub.tar.gz https://ndownloader.figshare.com/files/14418248 
+  577  tar -xvf sub.tar.gz 
+  578  ls
+  579  tar -xvf sub.tar.gz 
+  580  curl -L -o sub.tar.gz https://ndownloader.figshare.com/files/14418248 
+  581  tar -xvf sub.tar.gz 
+  582  ls -lh sub
+  583  cd ../ref_genome/
+  584  bwa index GCA_000017985.1_ASM1798v1_genomic.fna 
+  585  cd../..
+  586  cd ..
+  587  ls
+  588  cd ..
+  589  ls
+  590  cd results
+  591  mkdir aligment
+  592  ls
+  593  nano ~bash_scripts/alignment.sh
+  594  bash ~/bash_scripts/alignment.sh 
+  595  cd ..
+  596  ls
+  597  cd results/
+  598  ls
+  599  cd alignment/
+  600  head SRR2584863.sam 
+  601  cd ..
+  602  samtools view -S -b alignment/SRR2584863.sam >alignment/SRR2584863.bam
+  603  samtools sort -o  alignment/SRR2584863.sorted.bam  alignment/SRR2584863.bam
+  604  tview alignment/SRR2584863.sorted.bam ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna
+  605  samtools tview alignment/SRR2584863.sorted.bam ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna
+  606  samtools index alignment/SRR2584863.sorted.bam 
+  607  samtools tview alignment/SRR2584863.sorted.bam ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna
+  608  history .pdf
+  609  history 
+  610  history >20190612.pdf
+  611  ls
+  612  bcftools mpileup -O b -o SRR258463.bcf -f ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna alignment/SRR2584863.sorted.bam
+  613  bcftools call --ploidy 1 -m -v -o SRR258463_variants.bcf SRR258463.bcf 
+  614  history > 20190612.txt

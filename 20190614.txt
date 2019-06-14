@@ -1,0 +1,500 @@
+   34  grep -h -B1 -A2  NNNNNN *.fastq > badreads.txt
+   35  wc badreads.txt
+   36  wc -w badreads.txt
+   37  mv badreads.txt badreads.fastq
+   38  echo "grep -h -B1 -A2  NNNNNN" *.fastq" > badreads.txt"
+   39  ls
+   40  grep -B1 -A2 NNNNNN *.fastq | wc -l 
+   41  head *.fastq
+   42  head -1 *.fastq
+   43  for filename in *.fastq; do head -1 $filename ;  echo 4C978904 && /usr/bin/env && echo 81D06EB6
+   44  for filename in *.fastq; do  head -n 1 $filename >>seq_info.txt; done
+   45  cat seq_info.txt 
+   46  for filename *fastq
+   47  for filename in *fastq; do echo $filename >seq_info.txt; done
+   48  cat seq_info.txt
+   49  for filename *fastq
+   50  for filename in *fastq;  echo 4C978904 && /usr/bin/env && echo 81D06EB6
+   51  for filename in *fastq; do  echo 4C978904 && /usr/bin/env && echo 81D06EB6
+   52  more 
+   53  for filename in *fastq; do  echo 4C978904 && /usr/bin/env && echo 81D06EB6
+   54  for filename in *fasq; do grep -p NNNNNN; done
+   55  for filename in *fasq; do grep NNNNNN; done
+   56  for filename in *fasq; do grep -B1 -A2 NNNNNN; done
+   57  for filename in *fasq; do grep -B1 -A2 NNNNNN $filename; done
+   58  for filename in *fatq; do grep -B1 -A2 NNNNNN $filename; done
+   59  for filename in *fastq; do grep -B1 -A2 NNNNNN $filename; done
+   60  basename SRR098026.fastq .fastq 
+   61  cd ..
+   62  ls untrimmed_fastq/*fastq
+   63  ls *_fastq/*.fastq
+   64  basename untrimmed_fastq/SRR098026 
+   65  basename untrimmed_fastq/SRR098026.fastq .fastq 
+   66  #Challenge : get alll SRR numbers in all fastq folders
+   67  basename untrimmed_fastq/*.fastq SRR 
+   68  basename untrimmed_fastq/*.fastq
+   69  basename untrimmed_fastq/*fastq
+   70  basename untrimmed_fastq/*SRR SRR
+   71  basename untrimmed_fastq/.fastq SRR
+   72  basename untrimmed_fastq/.fastq SRR .fastq
+   73  basename untrimmed_fastq/SRR
+   74  basename untrimmed_fastq/.fastq SRR
+   75  basename untrimmed_fastq/SRR .fastq
+   76  ls
+   77  ls untrimmed_fastq/
+   78  basename  *_fastq/*.fastq
+   79  basename  *_fastq/*.fastq SRR
+   80  ls  *_fastq/*.fastq 
+   81  ls  *_fastq/*.fastq  SRR
+   82  basename untrimmed_fastq/.fastq 
+   83  basename untrimmed_fastq/.fastq  .fastq
+   84  basename untrimmed_fastq/fastq  .fastq
+   85  ls
+   86  ls untrimmed_fastq/
+   87  for filename in *fastq;  echo 4C978904 && /usr/bin/env && echo 81D06EB6
+   88  ls *_fastq/*.fastq
+   89  for filename in *_fastq/*.fastq; do echo $filename; done
+   90  for filename in *_fastq/*.fastq; do basename $filename .fastq SRRs.txt; done
+   91  for filename in *_fastq/*.fastq; do basename $filename .fastq >> SRRs.txt; done
+   92  cat SRRs.txt 
+   93  history .pdf
+   94  history
+   95  history .pdf
+   96  for filename *_fastq/*.fastq 
+   97  for filename in *_fastq/*.fastq ; do name =$(basename ${filename} .fastq); echo $name; done
+   98  for filename in *_fastq/*.fastq ; do name=$(basename ${filename} .fastq); echo $name; done
+   99  #print the name of each text file
+  100  for filename in *_txt/*.txt ; do name=$(basename ${filename} .txt); echo $name; done
+  101  for filename in *_txt/*.txt; do basename $filename .txt >> TXT.txt; done
+  102  cat TXT.txt 
+  103  for f in *.txt: do name=$(basename ${f} .txt); echo ${name};done
+  104  for f in *.txt: do name=$(basename ${f} .txt);echo ${name} ;done
+  105  rename all .txt files to _2019
+  106  for filenames in *.txt: do name=$(basename ${filenames} .txt);echo ${name} ;done
+  107  for filename in *.txt; do rename all .txt files to _2019done; done
+  108  history
+  109  for filename in *.txt; do mv $filename *.txt *_2019.txt; done
+  110  for filename in *.txt; do newname=$(basename $filename .txt); mv $filename ${newname}_2019.txt; done
+  111  for filename in *.txt; do newname=$(basename $filename .txt); echo "mv $filename ${newname}_2019.txt"; done
+  112  for filename in *.txt; do newname=$(basename $filename .txt); echo "rm $filename ${newname}_2019.txt"; done
+  113  for filename in *.txt; do newname=$(basename $filename .txt); echo "mv $filename ${newname}.txt"; done
+  114  for filename in *.txt; do newname=$(basename $filename .txt); mv $filename ${newname}.txt; done
+  115  ls
+  116  for filename in *.txt; do newname=$(basename ${filename} .txt);echo  mv $filename ${newname}.txt; done
+  117  for filename in *_2019.txt; do newname=$(basename ${filename} _2019.txt);echo "mv $filename ${newname}.txt"; done
+  118  for filename in *_2019.txt; do newname=$(basename ${filename} _2019.txt);echo mv $filename ${newname}.txt; done
+  119  for filename in *_2019.txt; do newname=$(basename ${filename} _2019.txt); mv $filename ${newname}.txt; done
+  120  ls
+  121  history 
+  122  history
+  123  history >> history.pdf
+  124  history >> history20190610.pdf
+  125  ls
+  126  cd shell_data/
+  127  cd untrimmed_fastq/
+  128  nano README.txt
+  129  cat README.txt 
+  130  ls
+  131  cd ..
+  132  mkdir scripts
+  133  mkdir processed_data
+  134  cd scripts/
+  135  nano get_bad_reads.sh
+  136  cat get_bad_reads.sh 
+  137  bash get_bad_reads.sh
+  138  head ../processed_data/bad_reads.fastq 
+  139  nano ged_bad_reads.sh
+  140  nano get_bad_reads.sh 
+  141  bash get_bad_reads.sh 
+  142  cd ..
+  143  ls
+  144  cd processed_data/
+  145  ls
+  146  cat bad_reads.fastq 
+  147  bash bad_reads.sh
+  148  cd ..
+  149  cd scripts/
+  150  ls
+  151  bash bad_reads.sh
+  152  bash get_bad_reads.sh
+  153  cd ..
+  154  ls
+  155  cd scripts
+  156  ls
+  157  chmod -w get_bad_reads.sh 
+  158  chmod -w get_bad_reads/*
+  159  ..cd
+  160  .. cd
+  161  chmod -w scripts/*
+  162  ls ~lh scripts/
+  163  ls -lh scripts/
+  164  cd scripts/
+  165  chmod +x get_bad_reads.sh 
+  166  ls -lh get_bad_reads.sh 
+  167  nano get_bad_reads.sh 
+  168  chmod +w get_bad_reads.sh 
+  169  nano get_bad_reads.sh 
+  170  ./get_bad_reads.sh  ../untrimmed_fastq/*.fastq
+  171  nano get_bad_reads.sh 
+  172  ./get_bad_reads.sh  ../untrimmed_fastq/*.fastq
+  173  cat  get_bad_reads.sh 
+  174  nano get_bad_reads.sh 
+  175  ./get_bad_reads.sh  ../untrimmed_fastq/*.fastq
+  176  cd ..
+  177  ls
+  178  mkdir data_info
+  179  cd data_info/
+  180  curl -O https://raw.githubusercontent.com/datacarpentry/wrangling-genomics/gh-pages/files/Ecoli_metadata_composite.csv
+  181  head Ecoli_metadata_composite.csv 
+  182  cd ..
+  183  mkdir data
+  184  mkdir data/untrimmed_fastq
+  185  cp ~/.backup/trimmmed_fastq/*fastq.gz data/untrimmed_fastq/
+  186  cd data/untrimmed_fastq/
+  187  ls
+  188  ls -lh
+  189  cd data
+  190  cd ..
+  191  ls
+  192  cd untrimmed_fastq/
+  193  ls
+  194  cp ~/.backup/trimmmed_fastq/*fastq.gz data/untrimmed_fastq/
+  195  ls
+  196  .. cd
+  197  cd ..
+  198  cp ~/.backup/trimmmed_fastq/*fastq.gz data/untrimmed_fastq/
+  199  cp ~/.backup/trimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  200  ls
+  201  mkdir ~bash_scripts
+  202  cp  ~/.backup/trimmed_fastq/*fastq.gz  data/untrimmed_fastq/
+  203  ls
+  204  cd data
+  205  cd data/
+  206  ls
+  207  cp  ~/.backup/trimmed_fastq/*fastq.gz  data/untrimmed_fastq/
+  208  ls
+  209  cp ~/.backup/trimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  210  mkdir data
+  211  mkdir untrimmed_fastq
+  212  cp ~/.backup/trimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  213  .. cd
+  214  pwd
+  215  mkdir ~/bash_scripts
+  216  echo "fastqc *fastq.gz" > ~/bash_scripts/variant_calling.sh
+  217  cat ~/bash_scripts/variant_calling.sh 
+  218  ls
+  219  pwd
+  220  mkdir -p ~/results/fastqc_untrimmed
+  221  mv *html ~/results/fastqc_untrimmed/
+  222  results/ cd
+  223  ls
+  224  fastqc_untrimmed/ cd
+  225  ls
+  226  .. cd
+  227  ..cd
+  228  .. cd
+  229  cp ~/.backup/untrimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  230  cd data/untrimmed_fastq/
+  231  echo "fastqc *fastq.gz" > ~/bash_scripts/variant_calling.sh
+  232  cat ~/bash_scripts/variant_calling.sh 
+  233  mkdir -p ~/results/fastqc_untrimmed
+  234  echo "fastqc *fastq.gz" > ~/bash_scripts/variant_calling.sh
+  235  mkdir -p ~/results/fastqc_untrimmed
+  236  echo "fastqc *fastq.gz" > ~/bash_scripts/variant_calling.sh
+  237  ls
+  238  un zip SRR2584863_1.fastq.gz 
+  239  unzip SRR2584863_1.fastq.gz 
+  240  ls
+  241  unzip SRR2584863_1.fastq.gz 
+  242  unzip "*.zip"
+  243  ls
+  244  gunzip "*.zip"
+  245  gzip "*.zip"
+  246  ls
+  247  gzip -d SRR2584863_1.fastq.gz 
+  248  for filename in *fastq.gz; do gzip -d filename ; done
+  249  for filename in *fastq.gz/*fastq.gz; do gzip -d filename ; done
+  250  for filename in *.fastq.gz/*fastq.gz; do gzip -d filename ; done
+  251  ls
+  252  cd ..
+  253  cp ~/.backup/untrimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  254  cd ..
+  255  cp ~/.backup/untrimmed_fastq/*fastq.gz data/untrimmed_fastq/
+  256  mkdir ~/bash_scripts
+  257  cat ~/bash_scripts/variant_calling.sh 
+  258  mkdir -p ~/results/fastqc_untrimmed
+  259  echo "fastqc *fastq.gz" > ~/bash_scripts/variant_calling.sh
+  260  cat ~/bash_scripts/variant_calling.sh 
+  261  mv *html ~/results/fastqc_untrimmed/
+  262  history
+  263  cd data
+  264  cd untrimmed_fastq/
+  265  fastqc *.fastq.gz
+  266  for filename in *.zip;do unzip ${filename}; done
+  267  head SRR2584863_1
+  268  head SRR2584863_1_fastqc/summary.txt
+  269  grep FAIL */summary.txt >>FAIL.txt
+  270  cat FAIL.txt 
+  271  trimmomatic
+  272  nano ~bash_scripts/trim_script.sh
+  273  nano ~bash_scripts/trim_script2.sh
+  274  nano ~/bash_scripts/trim_script2.sh
+  275  bash ~/bash_scripts/trim_script2.sh 
+  276  nano ~/bash_scripts/trim_script2.sh
+  277  bash ~/bash_scripts/trim_script2.sh 
+  278  nano ~/bash_scripts/trim_script2.sh
+  279  bash ~/bash_scripts/trim_script2.sh 
+  280  cd ..
+  281  bash ~/bash_scripts/trim_script2.sh 
+  282  nano ~/bash_scripts/trim_script2.sh
+  283  cd data
+  284  cd untrimmed_fastq/
+  285  bash ~/bash_scripts/trim_script2.sh 
+  286  nano ~/bash_scripts/trim_script2.sh
+  287  bash ~/bash_scripts/trim_script2.sh 
+  288  ls -l
+  289  nano ~/bash_scripts/trim_script2.sh
+  290  bash ~/bash_scripts/trim_script2.sh 
+  291  nano ~/bash_scripts/trim_script2.sh
+  292  bash ~/bash_scripts/trim_script2.sh 
+  293  nano ~/bash_scripts/trim_script2.sh
+  294  nano ~/bash_scripts/trim_script3.sh
+  295  ls
+  296  cd data
+  297  ls
+  298  for file in untrimmed_fastq/*fastq; do echo "fastq $file"; done
+  299  for file in untrimmed_fastq/*fastqc; do echo "fastq $file"; done
+  300  nano ~/bash_scripts/trim_script3.sh
+  301  nano ~/bash_scripts/trim_script2.sh
+  302  nano ~/bash_scripts/trim_script3.sh
+  303  nano ~/bash_scripts/trim_script2.sh
+  304  for R1 in *_1.* ; do R1=${R1//_1.fastq/_2.fastq}    ; R1paired=${R1//.fastq/_paired.fastq.gz} R1unpaired=${R1//.fastq/_unpaired.fastq.gz};    R2paired=${R2//.fastq/_paired.fastq.gz}
+  305  for R1 in *_1* ; do R1=${R1//_1.fastq/_2.fastq}    ; R1paired=${R1//.fastq/_paired.fastq.gz} R1unpaired=${R1//.fastq/_unpaired.fastq.gz};    R2paired=${R2//.fastq/_paired.fastq.gz};    R2unpaired=${R2//.fastq/_unpaired.fastq.gz}; echo "java -jar $WORK/IntMolModule/STG/practiceData/Trimmomatic-0.36 PE -threads 32 -phred33 $R1 $R2 $R1paired $R1unpaired $R2paired $R2unpaired";done
+  306  nano ~/bash_scripts/trim_script3.sh
+  307  ls
+  308  nano ~/bash_scripts/trim_script3.sh
+  309  bash ~/bash_scripts/trim_script3.sh
+  310  basename
+  311  basename *fastq-gz
+  312  basename *fastq.gz
+  313  ls
+  314  cd untrimmed_fastq/
+  315  basename .fastq.gz
+  316  history
+  317  for filename in *fastq.gz; do echo "basename ${filename}"; done
+  318  for filename in *fastq.gz; do basename ${filename}; done
+  319  for filename in *fastq.gz; do basename ${filename} .fastq.gz; done
+  320  for filename in *_1.fastq.gz; do basename ${filename} .fastq.gz; done
+  321  for R1 in *_1.fastq.gz R2 *_2.fastq.gz; do basename ${filename} .fastq.gz; done
+  322  for R1 in *_1.fastq.gz R2 *_2.fastq.gz; do basename ${R1,R2} .fastq.gz; done
+  323  for R1 in *_1.fastq.gz R2 *_2.fastq.gz; do basename ${R1} .fastq.gz; done
+  324  for R1 in *_1.fastq.gz *_2.fastq.gz; do basename ${R1} .fastq.gz; done
+  325  for R1 in *_1.fastq.gz; do for R2 *_2.fastq.gz basename ${R1} .fastq.gz; done
+  326  for R1 in *_1.fastq.gz; do for R2 in *_2.fastq.gz basename ${R1} .fastq.gz; done
+  327  for R1 in *_1.fastq.gz; do for R2 in *_2.fastq.gz ; do basename ${R1} .fastq.gz; done; done
+  328  for R1 in *_1.fastq.gz; do  for R2 in *_2.fastq.gz; basename $R1 .fastq.gz
+  329  for R1 in *_1.fastq.gz; do  for R2 in *_2.fastq.gz; basename $R1 .fastq.gz;done
+  330  for R1 in *_1.fastq.gz; do  for R2 in *_2.fastq.gz; basename ${R1} .fastq.gz;done
+  331  R1 = for R1 in *_1.fastq.gz; R2=for R2 in *_2.fastq.gz; basename ${R1} .fastq.gz;done
+  332  R1 = for R1 in *_1.fastq.gz; R2=for R2 in *_2.fastq.gz; basename ${R1} .fastq.gz; done
+  333  for R1 in *_1.fastq.gz; do R2=${R1%%_1.fastq.gz}"_2.fastq.gz"; echo $R2; done
+  334  for R1 in *_1.fastq.gz; do R2=${R1%%_1.fastq.gz}"_2.fastq.gz"; echo $R1; done
+  335  for R1 in *_1.fastq.gz; do R2=${R1%%_1.fastq.gz}"_2.fastq.gz"; echo "basename $R1 .fastq.gz; done
+  336  for R1 in *_1.fastq.gz; do R2=${R1%%_1.fastq.gz}"_2.fastq.gz"; echo "basename $R1 .fastq.gz"; done
+  337  for R1 in *_1.fastq.gz; do R2=${R1%%_1.fastq.gz}"_2.fastq.gz"; basename $R1 .fastq.gz; done
+  338  bash ~/bash_scripts/trim_script4.sh
+  339  bash ~/bash_scripts/trim_script2.sh
+  340  bash ~/bash_scripts/trim_script4.sh
+  341  cd ..
+  342  cd trimmed_fastq/
+  343  bash ~/bash_scripts/variant_calling.sh 
+  344  cd ..
+  345  cd untrimmed_fastq/
+  346  bash ~/bash_scripts/trim_script4.sh
+  347  bash ~/bash_scripts/trim_script3.sh
+  348  cd ..
+  349  bash ~/bash_scripts/trim_script3.sh
+  350  bash ~/bash_scripts/trim_script3.sh *~data/untrimmed_fastq
+  351  bash ~/bash_scripts/trim_script3.sh ~data/untrimmed_fastq
+  352  bash ~/bash_scripts/trim_script3.sh ~/data/untrimmed_fastq
+  353  bash ~/bash_scripts/trim_script3.sh ~/data/untrimmed_fastq/
+  354  bash ~/bash_scripts/trim_script4.sh 
+  355  bash ~/bash_scripts/trim_script4.sh
+  356  bash ~/bash_scripts/trim_script4.sh 
+  357  curl -O ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/017/985/GCA_000017985.1_ASM1798v1/GCA_000017985.1_ASM1798v1_genomic.fna.gz
+  358  cd data
+  359  cd ref_genome/
+  360  unzip GCA_000017985.1_ASM1798v1_genomic.fna.gz
+  361  wzunzip -d GCA_000017985.1_ASM1798v1_genomic.fna.gz 
+  362  gunzip -d GCA_000017985.1_ASM1798v1_genomic.fna.gz 
+  363  ls
+  364  head GCA_000017985.1_ASM1798v1_genomic.fna 
+  365  grep "^>" GCA_000017985.1_ASM1798v1_genomic.fna 
+  366  cd ..
+  367  cd untrimmed_fastq/
+  368  bash ~/bash_scripts/trim_script4.sh 
+  369  cd ..
+  370  mkdir trimmed_fastq_small
+  371  cd trimmed_fastq_small/
+  372  curl -i -o sub.tar.gz https://ndownloader.figshare.com/files/14418248 
+  373  tar -xvf sub.tar.gz 
+  374  ls
+  375  tar -xvf sub.tar.gz 
+  376  curl -L -o sub.tar.gz https://ndownloader.figshare.com/files/14418248 
+  377  tar -xvf sub.tar.gz 
+  378  ls -lh sub
+  379  cd ../ref_genome/
+  380  bwa index GCA_000017985.1_ASM1798v1_genomic.fna 
+  381  cd../..
+  382  cd ..
+  383  ls
+  384  cd ..
+  385  ls
+  386  cd results
+  387  mkdir aligment
+  388  ls
+  389  nano ~bash_scripts/alignment.sh
+  390  bash ~/bash_scripts/alignment.sh 
+  391  cd ..
+  392  ls
+  393  cd results/
+  394  ls
+  395  cd alignment/
+  396  head SRR2584863.sam 
+  397  cd ..
+  398  samtools view -S -b alignment/SRR2584863.sam >alignment/SRR2584863.bam
+  399  samtools sort -o  alignment/SRR2584863.sorted.bam  alignment/SRR2584863.bam
+  400  tview alignment/SRR2584863.sorted.bam ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna
+  401  samtools tview alignment/SRR2584863.sorted.bam ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna
+  402  samtools index alignment/SRR2584863.sorted.bam 
+  403  samtools tview alignment/SRR2584863.sorted.bam ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna
+  404  history .pdf
+  405  history 
+  406  history >20190612.pdf
+  407  ls
+  408  bcftools mpileup -O b -o SRR258463.bcf -f ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna alignment/SRR2584863.sorted.bam
+  409  bcftools call --ploidy 1 -m -v -o SRR258463_variants.bcf SRR258463.bcf 
+  410  history > 20190612.txt
+  411  bcftools view -H SRR258463_variants.bcf |head
+  412  bcftools view  SRR258463_variants.bcf |head
+  413  bcftools call --ploidy 1 -m -v -o SRR258463_variants.bcf SRR258463.bcf 
+  414  history tail > 3.txt
+  415  history|tail
+  416  history|tail > 4.txt
+  417  cd ..
+  418  nano bash_scripts/call_var.sh 
+  419  vcfutils.pl varfilter ~/results/alignment/SRR2584863.variants.bcf >results/SRR84863_final_variants.vcf
+  420  vcfutils.pl varFilter ~/results/alignment/SRR2584863.variants.bcf >results/SRR84863_final_variants.vcf
+  421  vcfutils.pl varFilter ~/results/SRR2584863.variants.bcf >results/SRR84863_final_variants.vcf
+  422  vcfutils.pl varFilter ~/results/SRR2584863_variants.bcf > ~/results/SRR84863_final_variants.vcf
+  423  vcfutils.pl varFilter ~/results/SRR2584863_variants.bcf > ~/results/SRR2584863_final_variants.vcf
+  424  vcfutils.pl varFilter ~/results/SRR258463_variants.bcf > results/SRR258463_final_variants.vcf
+  425  samtools tview g=2999331 ~/results/SRR258463_final_variants.vcf 
+  426  samtools tview  ~/results/SRR258463_final_variants.vcf 
+  427  samtools tview alignment/SRR2584863.sorted.bam ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna
+  428  cd results/
+  429  samtools tview alignment/SRR2584863.sorted.bam ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna
+  430  samtools tview alignment/SRR2584863.sorted.bam ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna
+  431  cd ..
+  432  cd results/
+  433  head SRR258463_final_variants.vcf 
+  434  grep -v '##' SRR258463_final_variants.vcf | wc -l
+  435  grep -v '^#' SRR258463_final_variants.vcf | wc -l
+  436  cd ..
+  437  bash bash_scripts/alignment1.sh 
+  438  ls
+  439  bash bash_scripts/alignment1.sh 
+  440  ls
+  441  mkdir ~/results/alignment_1
+  442  mkdir ~/results/alignment1
+  443  bash bash_scripts/alignment1.sh 
+  444  ?bwa
+  445  bwa -h
+  446  bwa --help
+  447  -h
+  448  help
+  449  bwa help
+  450  bash bash_scripts/alignment1.sh 
+  451  ls
+  452  cd data
+  453  ls
+  454  cd trimmed_fastq_small/
+  455  cd sub/
+  456  bash bash_scripts/alignment1.sh 
+  457  bash ~/data/bash_scripts/alignment1.sh 
+  458  bash ~/bash_scripts/alignment1.sh 
+  459  cd ..
+  460  bash ~/bash_scripts/alignment1.sh 
+  461  bash ~/bash_scripts/call_var1.sh 
+  462  s
+  463  bash ~/bash_scripts/variant_calling1.sh 
+  464  h -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+  465  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+  466  echo 'eval $(/home/dcuser/.linuxbrew/bin/brew shellenv)' >>~/.profile
+  467  eval $(/home/dcuser/.linuxbrew/bin/brew shellenv)
+  468  brew install gcc
+  469  mkdir assembly_test
+  470  mkdir assembly
+  471  cd assembly
+  472  wget http://www.bcgsc.ca/platform/bioinfo/software/abyss/releases/1.3.4/test-data.tar.gz
+  473  tar -xzvf test-data.tar.gz 
+  474  head test-data/reads1.fastq 
+  475  abyss-pe k=25 name=test in'test-data/reads1.fastq test-data/reads2.fastq
+  476  q
+  477  abyss-pe k=25 name=test in'test-data/reads1.fastq test-data/reads2.fastq'
+  478  brew install abyss
+  479  abyss-pe k=25 name=test in'test-data/reads1.fastq test-data/reads2.fastq'
+  480  abyss-pe k=25 name=test in='test-data/reads1.fastq test-data/reads2.fastq'
+  481  abyss-pe k=50 name=test45 in='test-data/reads1.fastq test-data/reads2.fastq'
+  482  bash loop_k_testdata.sh 
+  483  tmux new -s assembly
+  484  tmux list-sessions
+  485  cd ..
+  486  ls
+  487  cd data
+  488  cd trimmed_fastq_small/sub/assembly/
+  489  bash loop_k_testdata.sh 
+  490  bash ~data/trimmed_fastq_small_loop_k_testdata.sh 
+  491  bash ~/data/trimmed_fastq_small_loop_k_testdata.sh 
+  492  bash ~/data/trimmed_fastq_small/loop_k_testdata.sh 
+  493  cd ..
+  494  bash loop_k_testdata.sh 
+  495  cd assembly/
+  496  bash loop_k_testdata.sh 
+  497  head -1 testk15-stats > allteststats
+  498  grep 'scaffolds.fa' test*stats >> allteststats
+  499  git config --global user.name "Javier Melo"
+  500  git config --global user.email "javiermebo@unisabana.edu.co"
+  501  ls
+  502  cd ..
+  503  git config --global user.email "javiermebo@unisabana.edu.co"
+  504  git config --global user.name "Javier Melo"
+  505  git config --global user.email "javiermebo@unisabana.edu.co"
+  506  ls
+  507  git assembly/loop_k_testdata.sh
+  508  git add assembly/loop_k_testdata.sh
+  509  git commit -m "initial commit assembly"
+  510  git init
+  511  git add assembly/loop_k_testdata.sh
+  512  git add bash_scripts/alignment.sh
+  513  git commit -m "initial commit assembly"
+  514  initial commit assembly
+  515  initial commit bash_scripts/
+  516  git init
+  517  git add bash_scripts/alignment.sh
+  518  git commit -m "initial commit assembly"
+  519  initial commit bash_scripts/
+  520  git add r_scripts/
+  521  git status
+  522  git commit -m "add r scripts"
+  523  git log
+  524  ls
+  525  ls r_scripts/
+  526  git add ~
+  527  git add bash_scripts/
+  528  git add results/4.txt 
+  529  git add results/3.txt 
+  530  git add results/20190612.txt 
+  531  git add assembly/assembly_statistics.r 
+  532  git add data/trimmed_fastq_small/sub/assembly/loop_k_testdata.sh 
+  533  history > 20190614.txt

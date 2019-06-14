@@ -1,0 +1,10 @@
+  611  ls
+  612  bcftools mpileup -O b -o SRR258463.bcf -f ~/data/ref_genome/GCA_000017985.1_ASM1798v1_genomic.fna alignment/SRR2584863.sorted.bam
+  613  bcftools call --ploidy 1 -m -v -o SRR258463_variants.bcf SRR258463.bcf 
+  614  history > 20190612.txt
+  615  bcftools view -H SRR258463_variants.bcf |head
+  616  bcftools view  SRR258463_variants.bcf |head
+  617  bcftools call --ploidy 1 -m -v -o SRR258463_variants.bcf SRR258463.bcf 
+  618  history tail > 3.txt
+  619  history|tail
+  620  history|tail > 4.txt

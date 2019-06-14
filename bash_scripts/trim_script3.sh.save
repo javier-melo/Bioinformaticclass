@@ -1,0 +1,16 @@
+   83  ls
+   84  cd dc_sample_data/
+   85  ls
+   86  man df
+   87  du .
+   88  man du
+   89  du -h .#!usr/bin/env bash
+#Script to trim fastq w trimmomatic
+
+for file  in untrimmed_fastq/*_R1.fastq
+do
+withpath="${file}"
+filename=${withpath##*/}
+base="{filename%*_*.fastq}"
+echo "${base}"
+java -jar trimmomatic-0.33.jar PE untrimmed_fastq/"${base}"*_R1.fastq /untrimmed_fastq/"${base}"*_R2.fastq untrimmed"${base}"_R1 
